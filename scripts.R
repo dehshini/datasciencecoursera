@@ -1,1 +1,0 @@
-model_origin <- lm(height ~ 0 + ., data = df)
