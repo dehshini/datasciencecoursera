@@ -84,6 +84,7 @@ x_train2 <- cbind(y_train1, x_train)
 #merge the train and test sets
 allsubjects <- rbind(x_train2, x_test2)
 write.csv(allsubjects, "datasets/UCI/allsubjects.csv", row.names = FALSE)
+write.table(allsubjects, "datasets/UCI/allsubjects.txt", row.names = FALSE)
 
 #write a regex to select only the mean and standard deviation
 #features
@@ -102,3 +103,4 @@ tidy_data1 <- mean_std_data  %>%
 
 View(tidy_data1)
 write.csv(tidy_data1, "datasets/UCI/tidy_data.csv", row.names = FALSE)
+write.table(tidy_data1, "datasets/UCI/tidy_data.txt", row.names = FALSE)
