@@ -34,7 +34,7 @@ with(data1, {
     plot(
         Sub_metering_1 ~ Datetime,
         type = "l",
-        ylab = "Global Active Power (kilowatts)",
+        ylab = "Energy sub metering",
         xlab = ""
         )
     lines(Sub_metering_2 ~ Datetime, col = "Red")
