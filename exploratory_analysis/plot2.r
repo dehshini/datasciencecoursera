@@ -26,9 +26,9 @@ data1 <- data %>%
         Date >= as.Date("2007-02-01") & Date <= as.Date("2007-02-02")
     )
 
-datetime <- paste(as.Date(data1$Date), strptime(data1$Time, format = "%H:%M:%S"))
+datetime <- paste(as.Date(data1$Date), data1$Time)
 data1$Datetime <- as.POSIXct(datetime)
-    
+
 #plot the data
 #png("plot2.png", width = 480, height = 480)
 plot(
