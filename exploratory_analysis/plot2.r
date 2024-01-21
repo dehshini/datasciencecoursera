@@ -3,8 +3,7 @@ library(tidyverse)
 #download the zip file
 # download.file(
     # "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",
-    #destfile = "./exploratory_analysis/household_power_consumption.zip"
-)
+    #destfile = "./exploratory_analysis/household_power_consumption.zip")
 
 #unzip the file
 # unzip("household_power_consumption.zip")
@@ -38,4 +37,5 @@ plot(
     xlab = "",
     ylab = "Global Active Power (kilowatts)"
 )
-#dev.off()
+
+dev.print(png, file = "./exploratory_analysis/plot2.png", width = 480, height = 480)
